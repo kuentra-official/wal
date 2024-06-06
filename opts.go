@@ -15,6 +15,8 @@ type Options struct {
 	BytesPerSync uint32
 	// Split Seg File Extension
 	DiskFileExtension string
+	// add BlockCache
+	BlockCache uint32
 }
 
 const (
@@ -30,6 +32,7 @@ var DefaultOptions = Options{
 	BytesPerSync:      0,
 	SegmentSize:       GB,
 	DiskFileExtension: ".SDF",
+	BlockCache:        32 * 10 * KB,
 }
 
 //.SDF => Segment DiskFile
