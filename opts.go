@@ -28,6 +28,7 @@ var DefaultOptions = Options{
 	DirPath:           os.TempDir(),
 	DiskFlushSync:     false,
 	BytesPerSync:      0,
+	SegmentSize:       GB,
 	DiskFileExtension: ".SDF",
 }
 
